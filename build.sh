@@ -9,7 +9,7 @@ if ! $PYTHON -m pip install pyinstaller -Uqq; then
     exit 1
 fi
 
-$PYTHON -m PyInstaller --onefile --collect-all viam --collect-all cv2 --collect-all numpy --copy-metadata viam --hidden-import="googleapiclient" src/main.py
+$PYTHON -m PyInstaller --onefile --collect-all viam --collect-all cv2 --collect-all numpy --copy-metadata viam-sdk --hidden-import="googleapiclient" src/main.py
 
 TAR_FILES="meta.json ./dist/main"
 FIRST_RUN=$($PYTHON -c "import json; print(json.load(open('meta.json')).get('first_run', ''))" 2>/dev/null)
