@@ -1,0 +1,20 @@
+{
+  "model_type": "synthesized-cv-detector",
+  "model": "allisonorg:chess-landmark:detector",
+  "interface": "src/models/synth_detector.py exposes detect(image_bgr)->{label:(x,y)}",
+  "version": "0.0.1",
+  "labels": [
+    "black",
+    "white"
+  ],
+  "score": {
+    "set": "holdout",
+    "box_pass_rate": 0.98,
+    "train_box_pass_rate": 0.97,
+    "tolerance_px": 48.0,
+    "boxes_passed": 3294,
+    "boxes_total": 3361,
+    "note": "graded via magic-vision-builder per-box gate (held-out split)"
+  },
+  "built_at": "2026-06-05T12:38:44+00:00"
+}

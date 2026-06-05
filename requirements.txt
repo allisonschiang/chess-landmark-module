@@ -1,0 +1,4 @@
+viam-sdk==0.76.0
+typing-extensions
+numpy
+opencv-python
